@@ -11,10 +11,4 @@ Row Information :- Row 1 :- 1000008948, Anmol Durgapal, Computer Science And Eng
                    Row 2 :- 1000001234, John Paul, Computer Science And Engineering - Cloud Computing
                    Row 3 :- 1000009876, Chrish Campbell, Information Technology
                   
-and the program will display it in the following tabular format:-
-
-| SAP ID     || Name            || Branch                                             |
-=======================================================================================
-| 1000008948 || Anmol Durgapal  || Computer Science And Engineering                   |
-| 1000001234 || John Paul       || Computer Science And Engineering - Cloud Computing |
-| 1000009876 || Chrish Campbell || Information Technology                             |
+and the program will display it in the required tabular format.
