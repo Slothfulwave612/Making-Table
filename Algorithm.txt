@@ -1,0 +1,44 @@
+
+Algorithm (Making Table)
+
+1. Ask for total number of columns as input 'colTotal', which will be an integer value.
+
+2. Make two empty lists, 'colList' and 'rowList', 'colList' will store the name of columns and 'rowList' will store all the information about the column names.
+
+3. Ask for total number of rows as input 'rowTotal', which will be an integer value.
+
+4. Run a loop 'colTotal' number of time.
+		4.1. Ask for the name of column as 'x', which will be a string value.
+		4.2. Then append the value of 'x' in the list 'colList'.
+
+5. Run a loop 'rowTotal' number of time.
+		5.1. Run a nested loop 'colTotal' number of time.
+		5.2. Ask forthe description of each column as input 'x', which will be a string value.
+		5.3. Then append the value of 'x' in list 'rowList'.
+
+6. Assign value zero to a variable 'c'.
+
+7. Make an empty list 'maxLength', which will store the maximum length of either information in a row or column name(of the particular column), whichever found big.
+		7.1. Run a loop 'colTotal' number of times as i.
+				7.1.1. Assign length of 'colList' element to a variable 'temp'
+				7.1.2. Run a nested loop, from c to length of 'rowList' number of times and giving step value equal to length of 'colList' as j.
+						7.1.2.1 If the length of 'colList' element is greater than the value of 'temp', then length of 'colList' element will become 'temp'.
+				7.1.3. Append 'temp' value to 'maxLength' list.
+				7.1.4. Increment the value of 'c' by 1.
+
+8. Assign value zero to variables 'dashes' and 'c'.
+
+9. Traverse the list 'colList' as i.
+		9.1. Add length of '| ', i(element of colList), ' ' * (maxLength[c] - length of i), ' |' to 'dashes'.
+		9.2. Print the column name in the required format as:
+			 '| ' + i + ' ' * (maxLength[c] - length of i) + ' |'
+		9.3. Increment the length of 'c' by 1.
+
+10. Print '=' * dashes.
+
+11. Assign the value zero to variable 'c'.
+
+12. Traverse through the list 'rowList' as i.
+		12.1. Print '| ', i, ' ' * (maxLength[c] - len(i)), ' |'
+		12.2. Increment the value of 'c' by 1.
+		12.3. If the value of 'c' is equal to the length of 'colList', then assign the value of 'c' is equal to zero, go to another line.
